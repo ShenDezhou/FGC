@@ -1,7 +1,7 @@
 
 
 #Supplementary
-Dataset, code and experiment are available at:  
+Dataset, code and experiment results are available at:  
 `https://codeload.github.com/ShenDezhou/FGC/zip/master`.
 
 #0. Dataset: Movie meta-data, social network sentiments, and acting list.
@@ -16,6 +16,13 @@ This file contains names of movie actors. I use a name dictionary for a lookup t
 `fgc_training.utf8` and `fgc_test.utf8` files are vectors representing movie metadata, sentiments and actor name lists.    
 `fgc_training_states.utf8` and `fgc_test_states.utf8` files store movie box-office (in 10K).  
 `fgc_test_states_gold.utf8` is a preprocessed tag file generated from `fgc_test_states.utf8` movie box-office file. This file stores binary classification of movie, if it is smaller than 263.5, tagged with `A`, else tagged with `B`.   
+
+The following files are in `embedding` folder.  
+1.weibo_coreembedding.npz  
+This file contains Sina Weibo social network shortest path with 8380 actors. It is a representation of actor in social network. It is compressed numpy format.
+
+2.weibo_wembedding.npz  
+Social network measurement of actors, it is different representation for social network. It is compressed numpy format.
 
 
 #1. Environment  
